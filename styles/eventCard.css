@@ -1,3 +1,7 @@
+.mb {
+    margin-bottom: 0;
+}
+
 .eventCard {
     display: flex;
     align-items: center;
@@ -6,6 +10,7 @@
     margin: 0 auto;
     padding-top: 20px;
     width: 85vw;
+    height:15vw;
     background-color: #ffffff;
     color: #000000;
 }
@@ -82,4 +87,8 @@
     margin-left: 25px;
     margin-right: 10px;
     /* justify-content: center; */
+}
+
+.preview {
+    background-color: coral;
 }

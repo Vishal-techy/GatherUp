@@ -34,16 +34,16 @@ function EventCard() {
                     <div className='eveDateMode'>
                         <div className='eveDM'>
                             <Image style={{width:'2vw', height:'auto', marginRight:'5px'}} src={date}/>
-                            <p>April 30 to 31, 2023</p>
+                            <p className='mb'>April 30 to 31, 2023</p>
                         </div>
                         <div className='eveDM'>
                             <Image style={{width:'2vw', height:'auto', marginRight:'5px'}} src={mode}/>
-                            <p>Online Event</p>
+                            <p className='mb'>Online Event</p>
                         </div>
                     </div>
                 </div>
             </div>
-                <div className='preview'></div>
+            <div className='preview'>Preview</div>
         </div>
     </div>
   )
