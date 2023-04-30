@@ -10,6 +10,7 @@ import '@/styles/navbar.css'
 import '@/styles/subNavBar.css'
 import '@/styles/eventCard.css'
 import '@/styles/teamCard.css'
+import '@/styles/notificationCenter.css'
 
 import '@/styles/sideNavBar.css'
 import '@/styles/eventOverview.css'

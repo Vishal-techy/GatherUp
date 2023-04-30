@@ -9,6 +9,8 @@ import axios from 'axios'
 import { useEffect, useState } from 'react'
 import { useAuth } from '../context/AuthContext'
 import TeamCard from '@/components/TeamCard'
+import NotificationCenter from '@/components/NotficationCenter'
+// import NotificationCenter from '@/components/notficationCenter'
 
 const inter = Inter({ subsets: ['latin'] })
 
