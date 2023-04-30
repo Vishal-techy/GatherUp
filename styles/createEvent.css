@@ -1,0 +1,70 @@
+.sourceLanguageInp{
+    width: 669px;
+    height: 38px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 10px;
+    background: #FFFFFF;
+    padding-left: 15px;
+    border: 1px solid #D9D9D9;
+    border-radius: 5px;
+}
+.createEventWholeWrap{
+    /* background: #000; */
+    height: 950px;
+    justify-content:center ;
+    display: flex;
+    margin-top: 10px;
+}
+.sourceLanguageInp2{
+    width: 269px;
+    height: 38px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 10px;
+    background: #FFFFFF;
+    padding-left: 15px;
+    border: 1px solid #D9D9D9;
+    border-radius: 5px;
+}
+.createEventWrap{
+    background: #FFFFFF;
+    border: 1px solid #D6D6D6;
+    border-radius: 20px;
+        width:1013px;
+        height: 530px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;  
+        justify-content: center; 
+}
+.mt-eventname{
+    margin-top: 20px;
+    /* background: #000; */
+}
+.dateWrap{
+    display: flex;
+}
+.date{
+    /* display: flex; */
+}
+.wholeDateWrap{
+    display: flex;
+}
+.ml{
+    margin-left:50px ;
+}
+.create-btn-wrap{
+    /* background: #000; */
+    margin-top: 10px;
+}
+.cancel-btn{
+width: 116px;
+height: 37px;
+left: 585px;
+top: 679px;
+background: white;
+border: 1px solid #000000;
+border-radius: 5px;
+margin-left: 50px;
+}

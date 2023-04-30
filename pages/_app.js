@@ -17,6 +17,7 @@ import '@/styles/eventOverview.css'
 import '@/styles/promotion.css'
 import '@/styles/registeredUsers.css'
 import '@/styles/sessionCard.css'
+import '@/styles/createEvent.css'
 
 const noAuthRequired = ['/login', '/signup']
 
