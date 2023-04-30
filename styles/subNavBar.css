@@ -1,0 +1,29 @@
+.SubNavBar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F4F7FB;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+.searchBox {
+    border: none;
+    background-color: #ffffff;
+    color: #000000;
+    height: 3vw;
+    width: 10vw;
+    width: 500vw;
+    padding: 15px;
+    font-size: 1.1vw;
+    border-radius: 10px;
+}
+
+.subNavLinks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+    /* background-color: #ffffff; */
+    margin-left: 37vw;
+    gap: 40px;
+}

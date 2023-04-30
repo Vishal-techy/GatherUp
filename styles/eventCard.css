@@ -1,0 +1,46 @@
+.eventCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.eventTitle {
+    font-size: 1.7vw;
+    font-weight: 600;
+}
+
+.eventHeading {
+    display: flex;
+}
+
+.eventButtons {
+    display: flex;
+    margin-left: 40vw;
+}
+
+.eveButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 8vw;
+    height: 40px;
+    background-color: #1C2433;
+    border-radius: 5px;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.eveButtonborderless {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 8vw;
+    height: 40px;
+    /* background-color: #1C2433; */
+    border-radius: 5px;
+    color: #1C2433;
+    font-weight: 600
+}
