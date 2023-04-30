@@ -106,7 +106,7 @@ function attendeeDetails() {
   
       <div className='sub-btn-wrap'>
         
-        <Button className='submit-btn' variant="primary" type="submit" style={{color: 'white'}}>
+        <Button className='submit-btn' variant="primary" type="submit" style={{color: 'white'}} onClick={()=>{window.location="https://rzp.io/l/programmingworkshop"}}>
           Submit
         </Button>
       </div>
