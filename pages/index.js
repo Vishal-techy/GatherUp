@@ -5,6 +5,7 @@ import styles from '@/styles/Home.module.css'
 import NavBar from '@/components/NavBar'
 import SubNavBar from '@/components/SubNavBar'
 import EventCard from '@/components/EventCard'
+import TeamCard from '@/components/TeamCard'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -21,6 +22,7 @@ export default function Home() {
       <NavBar/>
       <SubNavBar/>
       <EventCard/>
+      <TeamCard/>
 
     </>
   )
