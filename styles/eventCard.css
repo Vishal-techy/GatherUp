@@ -3,6 +3,9 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin: 0 auto;
+    padding-top: 20px;
+    width: 85vw;
     background-color: #ffffff;
     color: #000000;
 }
@@ -10,15 +13,18 @@
 .eventTitle {
     font-size: 1.7vw;
     font-weight: 600;
+    width: 60vw;
 }
 
 .eventHeading {
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .eventButtons {
     display: flex;
-    margin-left: 40vw;
+    margin-left: 5vw;
 }
 
 .eveButton {
@@ -43,4 +49,37 @@
     border-radius: 5px;
     color: #1C2433;
     font-weight: 600
+}
+
+.eventPoster {
+    width: 22vw;
+    height: 13vw;
+    border-radius: 5px;
+    background-color: #D9D9D9;
+}
+
+.eventContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.eveDesc {
+    width: 55vw;
+    margin-left: 30px;
+}
+
+.eveDateMode {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.eveDM {
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+    margin-right: 10px;
+    /* justify-content: center; */
 }
