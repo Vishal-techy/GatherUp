@@ -1,23 +1,49 @@
 import React from 'react'
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import axios from 'axios'
+import { useAuth } from '../context/AuthContext'
+import { useRouter } from 'next/router'
 function CreateEvent() {
+  const { user, login } = useAuth()
+  const [loading, setLoading] = useState(false)
+  const [data, setData] = useState({
+      SourceLanguage: '',
+      EventName: '',
+      StartDate:'',
+      EndDate:'',
+      StartTime:'',
+      EndTime:''
+    })
+  const router = useRouter()
+
+
     
-    const [data, setData] = useState({
-        SourceLanguage: '',
-        EventName: '',
-        StartDate:'',
-        EndDate:'',
-        StartTime:'',
-        EndTime:''
-      })
+  const uploadData = () => {
+      setLoading(true)
+      axios.post("http://localhost:8080/createEvent/", {
+        title : data.EventName,
+        startDate : data.StartDate,
+        endDate: data.EndDate,
+        timings: data.StartTime,
+        userId : user.uid,
+      } ).then((data) => {
+          console.log(data);
+          setLoading(false)
+          // router.push('/eventDetails')
+      }).catch((err) => {
+        console.log(err);
+        setLoading(false)
+        alert(err)
+      })
+    }
   return (
     <div className='createEventWholeWrap'>
   <div className='createEventWrap'>    
 <div>
 
-    <Form>
+    <Form onSubmit={uploadData}>
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label><h3 className='mt-eventname'>Source Language</h3></Form.Label>
           <Form.Control
@@ -30,7 +56,7 @@ function CreateEvent() {
             }
             value={data.SourceLanguage}
             required
-            type="email"
+            type="text"
             placeholder="English"
           />
         <Form.Label><h3 className='mt-eventname'>Event Name</h3></Form.Label>
@@ -39,7 +65,7 @@ function CreateEvent() {
             onChange={(e) =>
               setData({
                 ...data,
-                EventName: e.EventName.value,
+                EventName: e.target.value,
               })
             }
             value={data.EventName}
@@ -61,7 +87,7 @@ function CreateEvent() {
             }
             value={data.StartDate}
             required
-            type="text"
+            type="date"
           />
 </div>
 <div className='ml' ></div>
@@ -72,12 +98,12 @@ function CreateEvent() {
             onChange={(e) =>
               setData({
                 ...data,
-                StartTime: e.StartTime.value,
+                StartTime: e.target.value,
               })
             }
             value={data.StartTime}
             required
-            type="text"
+            type="time"
           />
 </div>
 </div>
@@ -89,12 +115,12 @@ function CreateEvent() {
             onChange={(e) =>
               setData({
                 ...data,
-                EndDate: e.EndDate.value,
+                EndDate: e.target.value,
               })
             }
             value={data.EndDate}
             required
-            type="text"
+            type="date"
           />
 </div>
 <div className='ml' ></div>
@@ -105,12 +131,12 @@ function CreateEvent() {
             onChange={(e) =>
               setData({
                 ...data,
-                EndTime: e.EndTime.value,
+                EndTime: e.target.value,
               })
             }
             value={data.EndTime}
             required
-            type="text"
+            type="time"
           />
 </div>
 </div>
@@ -119,10 +145,13 @@ function CreateEvent() {
 </Form.Group>
       <div className='create-btn-wrap'>
       <Button className='submit-btn' variant="primary" type="submit">
-       <span className='span-submit' ><h4>Create</h4></span>
+        {
+          loading ? 'Creating...' : 
+          <span className='span-submit' ><h4>Create</h4></span>
+        }
       </Button>
       <Button className='cancel-btn' variant="primary" type="submit">
-       <span className='cancel-submit'><h4>Cancel</h4></span>
+       <span className='cancel-submit' onClick={() => router.push('/')}><h4>Cancel</h4></span>
       </Button>
       </div>
   
