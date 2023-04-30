@@ -4,12 +4,12 @@ import poster from '../public/eventPoster.png'
 import date from '../public/date.png'
 import mode from '../public/mode.png'
 
-function SessionCard({title, description, startDate, endDate, venue}) {
+function SessionCard({title, description, startDate, endDate, venue, session}) {
   return (
     <div>
         <div className='SessionCard'>
             <div className='eventHeading'>
-                <div className='eventTitle'>{title}</div>
+                <div className='eventTitle'><span className='green'>{session}</span>{title}</div>
                     <div className='eventButtons'>
                         <div className='eveButtonborderless'>
                             Edit
@@ -21,14 +21,14 @@ function SessionCard({title, description, startDate, endDate, venue}) {
                     </div>
             </div>
             
-            <hr style={{width:'85vw', marginTop:'15px'}}/>
+            <hr style={{width:'78vw', marginTop:'15px'}}/>
 
             <div className='eventContent'>
                 <div className='eventPoster'>
                     {/* <Image width={'10%'} src={poster}/> */}
                 </div>
                 <div className='eventDescription'>
-                    <div className='eveDesc'>
+                    <div className='sessionEveDesc'>
                        {description}
                     </div>
                     <div className='eveDateMode'>
