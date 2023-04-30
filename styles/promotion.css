@@ -66,18 +66,18 @@ padding-left: 15px;
 }
 
 .emailInput{
-    width: 35vw;
+    width: 40vw;
     height: 48px;
     border-radius: 10px;
     border: none;
-    margin-top: 50px;
+    margin-top: 20px;
     background: #FFFFFF;
     box-shadow: 0px 2px 11px rgba(69, 65, 164, 0.06), 0px 4px 10px rgba(31, 37, 89, 0.07);
 
 }
 .notiDescription{
     margin-top: 30px;
-    width: 35vw;
+    width: 40vw;
     height: 208px;
     border-radius: 10px;
     border: none;
@@ -88,9 +88,49 @@ padding-left: 15px;
 box-shadow: 0px 2px 11px rgba(69, 65, 164, 0.06), 0px 4px 10px rgba(31, 37, 89, 0.07);
 }
 
+.summary {
+    margin-top: 20px;
+    width: 40vw;
+    height: 108px;
+    border-radius: 10px;
+    border: none;
+    background: #FFFFFF;
+    /* padding-inline-start: 50px; */
+    padding-bottom: 60px;
+    padding-left: 15px;
+box-shadow: 0px 2px 11px rgba(69, 65, 164, 0.06), 0px 4px 10px rgba(31, 37, 89, 0.07);
+}
+
+.imgUpload {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40vw;
+    /* height: 48px; */
+    padding-left: 1px;
+    border-radius: 0px 5px 5px 0px;
+    border: none;
+    margin-top: 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 11px rgba(69, 65, 164, 0.06), 0px 4px 10px rgba(31, 37, 89, 0.07);
+
+}
+
+.template1 {
+    width: 10vw;
+    height: auto;
+    margin-left: 10px;
+}
+
+.template2 {
+    width: 10vw;
+    height: auto;
+    margin-left: 20px;
+}
+
 .passwordInput {
     margin-top: 30px;
-    width: 35vw;
+    width: 40vw;
     height: 208px;
     border-radius: 10px;
     border: none;
@@ -131,7 +171,7 @@ box-shadow: 0px 2px 11px rgba(69, 65, 164, 0.06), 0px 4px 10px rgba(31, 37, 89, 
 }
 
 .emailInput2{
-    width: 35vw;
+    width: 40vw;
     height: 48px;
     border-radius: 10px;
     border: none;
@@ -158,4 +198,12 @@ box-shadow: 0px 2px 11px rgba(69, 65, 164, 0.06), 0px 4px 10px rgba(31, 37, 89, 
 }
 .flexFor-input{
     display: flex;
+}
+
+.eventDetailsWrap {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 80px;
+    margin-top: 20px;
 }
