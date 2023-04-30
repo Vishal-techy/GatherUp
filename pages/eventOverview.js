@@ -67,7 +67,7 @@ function eventOverview() {
                         </div>
                     </div>
 
-                    <NotificationCenter eventId={query.eventId}/>
+
         </div>
         </div>
         </div>

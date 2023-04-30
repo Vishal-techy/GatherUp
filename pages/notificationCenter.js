@@ -11,8 +11,10 @@ import session from '@/public/session.svg'
 import emails from '@/public/emails.svg'
 import registrations from '@/public/registrations.svg'
 import promotions from '@/public/promotions.svg'
-
+import NotificationCenter from '@/components/NotficationCenter'
+import { useRouter } from 'next/router'
 function notificationCenter() {
+    const { query } = useRouter();
   return (
     <div>
         <NavBar/>
@@ -63,6 +65,8 @@ function notificationCenter() {
                             <p className='eveDet'>Online Event</p>
                         </div>
                     </div>
+
+            <NotificationCenter eventId={query.eventId}/>
         </div>
         </div>
         </div>
