@@ -27,7 +27,7 @@ export default function Home() {
       
       {/* <EventCard/> */}
       {/* <TeamCard name="Vishal Chinnasamy" email="vishalchinns1650@gmail.com" eventRole="Event Owner"/> */}
-      <NotificationCenter  />
+  
 
     </>
   )
