@@ -20,9 +20,9 @@ function NavBar() {
             {/* <hr className='verLine'/> */}
 
             <div className='navLinks'>
-                <Link href={'/eventOverview'}><p className='links'>Events</p></Link>
-                <Link href={'/attendees'}><p className='links'>Attendees</p></Link>
-                <Link href={'/'}><p className='links'>Settings</p></Link>
+                <Link style={{textDecoration:'none'}} href={'/eventOverview'}><p className='links'>Events</p></Link>
+                <Link  style={{textDecoration:'none'}} href={'/attendees'}><p className='links'>Attendees</p></Link>
+                <Link style={{textDecoration:'none'}} href={'/'}><p className='links'>Settings</p></Link>
                 {user ? (
               <div>
                 <p
