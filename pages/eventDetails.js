@@ -8,9 +8,11 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import temp1 from '@/public/temp1.jpeg'
 import temp2 from '@/public/temp2.jpeg'
+import { useAuth } from '../context/AuthContext'
 
 function eventDetails() {
-        
+  const { user, login } = useAuth()
+
     const [data, setData] = useState({
         sourceLang : '',
         eventName : '',
@@ -29,8 +31,14 @@ function eventDetails() {
         facebookLink : '',
         resourceImg : '',
         resourceVid : '',
+        userId : user.uid
 
       })
+
+    const uploadData = (e) => {
+      e.preventDefault();
+      axios.post("")
+    }
   return (
     <div>
         <NavBar/>
