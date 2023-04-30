@@ -11,6 +11,7 @@ import session from '@/public/session.svg'
 import emails from '@/public/emails.svg'
 import registrations from '@/public/registrations.svg'
 import promotions from '@/public/promotions.svg'
+import SessionCard from '@/components/SessionCard'
 
 function eventSession() {
   return (
@@ -64,6 +65,10 @@ function eventSession() {
                         </div>
                     </div>
         </div>
+
+        <SessionCard session="Session 1 - " title="International Web 3.0 conference @Bengaluru " description="Lorem simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book." startDate="21" endDate="23 April, 2023" venue="Online Mode"/>
+        <SessionCard session="Session 2 - " title="International Web 3.0 conference @Bengaluru " description="Lorem simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book." startDate="21" endDate="23 April, 2023" venue="Online Mode"/>
+
         </div>
         </div>
     </div>

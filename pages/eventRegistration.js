@@ -11,6 +11,7 @@ import session from '@/public/session.svg'
 import emails from '@/public/emails.svg'
 import registrations from '@/public/registrations.svg'
 import promotions from '@/public/promotions.svg'
+import RegisteredUsers from '@/components/RegisteredUsers'
 
 function eventRegistration() {
   return (
@@ -64,6 +65,9 @@ function eventRegistration() {
                         </div>
                     </div>
         </div>
+            <RegisteredUsers name="Vishal Chinnasamy" email="vishalchinns1650@gmail.com" mobile="9498844532" location="Coimbatore"/>
+            <RegisteredUsers name="Rohith Kumar B" email="brohithkumar02@gmail.com" mobile="9944910314" location="Mannai"/>
+
         </div>
         </div>
     </div>
