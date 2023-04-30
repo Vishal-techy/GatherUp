@@ -27,8 +27,20 @@
     margin-top: 25px;
     margin-bottom: 25px;
     cursor: pointer;
+    text-decoration: none;
+    border-color: #ffffff;
 }
 
+.sideLinkText:link { text-decoration: none; }
+
+
+.sideLinkText:visited { text-decoration: none; }
+
+
+.sideLinkText:hover { text-decoration: none; }
+
+
+.sideLinkText:active { text-decoration: none; }
 
 .sideLinkWrap1 {
     padding-top: 30px;

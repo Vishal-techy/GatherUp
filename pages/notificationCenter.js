@@ -12,7 +12,7 @@ import emails from '@/public/emails.svg'
 import registrations from '@/public/registrations.svg'
 import promotions from '@/public/promotions.svg'
 
-function eventOverview() {
+function notificationCenter() {
   return (
     <div>
         <NavBar/>
@@ -20,9 +20,9 @@ function eventOverview() {
         {/* <SideNavBar/> */}
 
         <div className='sideNavBar'>
-            <Link href="/eventOverview"><div className='sideLinkWrap1'><div className='sideLinkOverview'>
-                <Image className='sideLinkImgOverview' src={overview}/>
-                <p className='sideLinkTextOverview' style={{textDecoration:'none', borderColor:'white'}}>Overview</p>
+            <Link href="/eventOverview"><div className='sideLinkWrap1'><div className='sideLink'>
+                <Image className='sideLinkImg' src={overview}/>
+                <p className='sideLinkText' style={{textDecoration:'none', borderColor:'white'}}>Overview</p>
             </div></div> </Link>
 
             <Link href="/eventTeam"><div className='sideLinkWrap'><div className='sideLink'>
@@ -35,9 +35,9 @@ function eventOverview() {
                 <p className='sideLinkText'>Sessions</p>
             </div></div></Link>
 
-            <Link href="/notificationCenter"><div className='sideLinkWrap'><div className='sideLink'>
-                <Image className='sideLinkImg' src={emails}/>
-                <p className='sideLinkText'>Notifications</p>
+            <Link href="/notificationCenter"><div className='sideLinkWrap'><div className='sideLinkNotification'>
+                <Image className='sideLinkImgNotification' src={emails}/>
+                <p className='sideLinkTextNotification'>Notifications</p>
             </div></div></Link>
 
             <Link href="/eventRegistration"><div className='sideLinkWrap'><div className='sideLink'>
@@ -70,4 +70,4 @@ function eventOverview() {
   )
 }
 
-export default eventOverview
+export default notificationCenter
