@@ -4,8 +4,10 @@ import React from 'react'
 import Image from 'next/image'
 import date from '../public/date.png'
 import mode from '../public/mode.png'
-
+import NotificationCenter from '@/components/NotficationCenter'
+import { useRouter } from 'next/router'
 function eventOverview() {
+    const { query } = useRouter();
   return (
     <div>
         <NavBar/>
@@ -24,6 +26,8 @@ function eventOverview() {
                             <p className='eveDet'>Online Event</p>
                         </div>
                     </div>
+
+                    <NotificationCenter eventId={query.eventId}/>
         </div>
         </div>
         </div>

@@ -2,17 +2,30 @@ import React from 'react'
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import { useState } from 'react';
-function NotificationCenter() {
-    
+import axios  from 'axios';
+function NotificationCenter({eventId}) {
+    const [loading, setLoading] = useState(false)
     const [data, setData] = useState({
         title: '',
-        description: '',
-      })
+        description: '',})
+
+    const postContent = (e) => {
+      e.preventDefault()
+      console.log("Hey");
+      setLoading(true)
+      axios.get(`http://localhost:8080/sendMessage/${eventId}`).then((res) => {
+
+        setLoading(false)
+      }).catch((err) => {
+         setLoading(false)
+         alert("Something went wrong")
+      })  
+    }
   return (
     <div className='NotificationCentercardWrap'>    
     <h2 className='NotificationCard-hero'>Notification Center</h2>
     <div>
-    <Form>
+    <Form onSubmit={postContent}>
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Control onChange={(e) =>
               setData({
@@ -20,7 +33,7 @@ function NotificationCenter() {
                 title: e.target.value,
               })
             }
-            value={data.title} className='emailInput' placeholder='Title'/>
+            value={data.title} className='emailInput' required placeholder='Title'/>
       </Form.Group>
 
       <Form.Group className="mb-3" controlId="formBasicPassword">
@@ -37,9 +50,13 @@ function NotificationCenter() {
 
       </Form.Group>
       <div className='sub-btn-wrap'>
-      <Button className='submit-btn' variant="primary" type="submit">
-       <span className='span-submit' ><h4>send</h4></span>
-      </Button>
+        {
+          loading ?
+          <div>Loading..</div> : 
+        <Button className='submit-btn' variant="primary" type="submit" style={{color: 'white'}}>
+          Submit
+        </Button>
+        }
       </div>
   
     </Form>
