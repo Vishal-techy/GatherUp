@@ -97,7 +97,7 @@ function PromotionCard({eventId}) {
       </div>
       <div className='sub-btn-wrap'>
       <Button className='submit-btn' variant="primary" type="submit">
-       <span className='span-submit' ><h4>send</h4></span>
+       <span className='span-submit' ><h4>Send</h4></span>
       </Button>
       </div>
   

@@ -25,7 +25,7 @@ function NotificationCenter({eventId}) {
       })  
     }
   return (
-    <div className='NotificationCentercardWrap'>    
+    <div className='NotificationCentercardWrap1'>    
     <h2 className='NotificationCard-hero'>Notification Center</h2>
     <div>
     <Form onSubmit={postContent}>
@@ -47,7 +47,7 @@ function NotificationCenter({eventId}) {
               })
             }
             value={data.description}
-            required type="text" className='passwordInput' placeholder="Description" />
+            required type="text" className='notiDescription' placeholder="Description" />
       </Form.Group>
       <Form.Group className="mb-3" controlId="formBasicCheckbox">
 

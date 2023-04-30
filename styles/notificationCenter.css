@@ -2,13 +2,13 @@
     background: #FFFFFF;
 border: 1px solid #D6D6D6;
 border-radius: 20px;
-    width:1013px;
-    height: 530px;
+    width: 5vw;
+    height: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
+
 .NotificationCard-hero{
     margin-top: 60px;
 }
