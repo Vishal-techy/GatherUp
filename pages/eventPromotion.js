@@ -11,6 +11,7 @@ import session from '@/public/session.svg'
 import emails from '@/public/emails.svg'
 import registrations from '@/public/registrations.svg'
 import promotions from '@/public/promotions.svg'
+import PromotionCard from '@/components/promotionCard'
 
 function eventPromotion() {
   return (
@@ -63,6 +64,7 @@ function eventPromotion() {
                             <p className='eveDet'>Online Event</p>
                         </div>
                     </div>
+                <PromotionCard />
         </div>
         </div>
         </div>

@@ -14,6 +14,7 @@ import '@/styles/notificationCenter.css'
 
 import '@/styles/sideNavBar.css'
 import '@/styles/eventOverview.css'
+import '@/styles/promotion.css'
 
 const noAuthRequired = ['/login', '/signup']
 
