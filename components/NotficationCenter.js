@@ -13,7 +13,7 @@ function NotificationCenter({eventId}) {
       e.preventDefault()
       console.log("Hey");
       setLoading(true)
-      axios.post(`http://localhost:8080/sendMessage/${eventId}`, {
+      axios.post(`http://localhost:8080/sendMessage/10`, {
         title: data.title,
         description: data.description,
       }).then((res) => {
