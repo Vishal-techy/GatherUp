@@ -23,10 +23,12 @@
 }
 .teamCardText{
     margin-left:20px;
+    width: 300px;
 }
 .text3{
-    margin-left:250px;
+    margin-left:200px;
+    width: 150px;
 }
 .text4{
-    margin-left: 250px;
+    margin-left: 150px;
 }

@@ -13,6 +13,12 @@ import session from '@/public/session.svg'
 import emails from '@/public/emails.svg'
 import registrations from '@/public/registrations.svg'
 import promotions from '@/public/promotions.svg'
+import progress from '@/public/progress.png'
+import microwebsite from '@/public/microwebsite.png'
+import progresstracker from '@/public/progresstracker.png'
+import sessions from '@/public/sessions.png'
+import eventMembers from '@/public/eventMembers.png'
+import exhibitors from '@/public/exhibitors.png'
 
 function eventOverview() {
     const { query } = useRouter();
@@ -68,6 +74,32 @@ function eventOverview() {
                     </div>
 
 
+        </div>
+
+        <div className='overviewCards'>
+            <div>
+                <Image  style={{width:'25vw', height:'auto', cursor:'pointer'}} src={progress}/>
+            </div>
+
+            <div>
+                <Image  style={{width:'25vw', height:'auto', cursor:'pointer'}} src={microwebsite}/>
+            </div>
+
+            <div>
+                <Image  style={{width:'25vw', height:'auto', cursor:'pointer'}} src={progresstracker}/>
+            </div>
+
+            <div>
+                <Image  style={{width:'25vw', height:'auto', cursor:'pointer'}} src={sessions}/>
+            </div>
+
+            <div>
+                <Image  style={{width:'25vw', height:'auto', cursor:'pointer'}} src={eventMembers}/>
+            </div>
+
+            <div>
+                <Image  style={{width:'25vw', height:'auto', cursor:'pointer'}} src={exhibitors}/>
+            </div>
         </div>
         </div>
         </div>

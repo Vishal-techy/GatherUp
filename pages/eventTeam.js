@@ -68,6 +68,14 @@ function eventTeam() {
             </div>
 
             <TeamCard name="Vishal Chinnasamy" email="vishalchinns1650@gmail.com" eventRole="Owner"/>
+
+            <TeamCard name="Rohith Kumar B" email="rohithkumar2004.com" eventRole="Owner"/>
+
+            <TeamCard name="Sasidharan R" email="dharan732@gmail.com" eventRole="Organizer"/>
+
+            <TeamCard name="Rathi Raguraman" email="rathiraguraman2004@gmail.com" eventRole="Organizer"/>
+
+
         </div>
     </div>
 
