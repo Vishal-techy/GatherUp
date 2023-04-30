@@ -5,8 +5,6 @@ import Image from 'next/image'
 import Link from 'next/link'
 import date from '../public/date.png'
 import mode from '../public/mode.png'
-import NotificationCenter from '@/components/NotficationCenter'
-import { useRouter } from 'next/router'
 import overview from '@/public/overview.svg'
 import team from '@/public/team.svg'
 import session from '@/public/session.svg'
@@ -14,8 +12,7 @@ import emails from '@/public/emails.svg'
 import registrations from '@/public/registrations.svg'
 import promotions from '@/public/promotions.svg'
 
-function eventOverview() {
-    const { query } = useRouter();
+function eventTeam() {
   return (
     <div>
         <NavBar/>
@@ -23,14 +20,14 @@ function eventOverview() {
         {/* <SideNavBar/> */}
 
         <div className='sideNavBar'>
-            <Link href="/eventOverview"><div className='sideLinkWrap1'><div className='sideLinkOverview'>
-                <Image className='sideLinkImgOverview' src={overview}/>
-                <p className='sideLinkTextOverview' style={{textDecoration:'none', borderColor:'white'}}>Overview</p>
+            <Link href="/eventOverview"><div className='sideLinkWrap1'><div className='sideLink'>
+                <Image className='sideLinkImg' src={overview}/>
+                <p className='sideLinkText' style={{textDecoration:'none', borderColor:'white'}}>Overview</p>
             </div></div> </Link>
 
-            <Link href="/eventTeam"><div className='sideLinkWrap'><div className='sideLink'>
-                <Image className='sideLinkImg' src={team}/>
-                <p className='sideLinkText' style={{textDecoration:'none'}}>Team</p>
+            <Link href="/eventTeam"><div className='sideLinkWrap'><div className='sideLinkTeam'>
+                <Image className='sideLinkImgTeam' src={team}/>
+                <p className='sideLinkTextTeam' style={{textDecoration:'none'}}>Team</p>
             </div></div></Link>
 
             <Link href="/eventSession"><div className='sideLinkWrap'><div className='sideLink'>
@@ -66,8 +63,6 @@ function eventOverview() {
                             <p className='eveDet'>Online Event</p>
                         </div>
                     </div>
-
-                    <NotificationCenter eventId={query.eventId}/>
         </div>
         </div>
         </div>
@@ -75,4 +70,4 @@ function eventOverview() {
   )
 }
 
-export default eventOverview
+export default eventTeam

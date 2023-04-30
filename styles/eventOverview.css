@@ -35,3 +35,161 @@
     margin-right: 10px;
     /* justify-content: center; */
 }
+
+.sideLinkOverview {
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    background-color: #ffffff;
+}
+
+.sideLinkImgOverview{
+    scale: 1.3;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    cursor: pointer;
+
+    filter: brightness(0) saturate(100%) invert(9%) sepia(10%) saturate(2715%) hue-rotate(180deg) brightness(96%) contrast(89%);
+}
+
+
+.sideLinkTextOverview {
+    color: #1C2433;
+    font-size: 1.2vw;
+    margin-left: 15px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    cursor: pointer;
+    text-decoration: none;
+    border-color: #ffffff;
+}
+
+.sideLinkTeam {
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    background-color: #ffffff;
+}
+
+.sideLinkImgTeam{
+    scale: 1.3;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    cursor: pointer;
+
+    filter: brightness(0) saturate(100%) invert(9%) sepia(10%) saturate(2715%) hue-rotate(180deg) brightness(96%) contrast(89%);
+}
+
+
+.sideLinkTextTeam {
+    color: #1C2433;
+    font-size: 1.2vw;
+    margin-left: 15px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+
+.sideLinkSession {
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    background-color: #ffffff;
+}
+
+.sideLinkImgSession{
+    scale: 1.3;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    cursor: pointer;
+
+    filter: brightness(0) saturate(100%) invert(9%) sepia(10%) saturate(2715%) hue-rotate(180deg) brightness(96%) contrast(89%);
+}
+
+
+.sideLinkTextSession {
+    color: #1C2433;
+    font-size: 1.2vw;
+    margin-left: 15px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+
+.sideLinkNotification {
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    background-color: #ffffff;
+}
+
+.sideLinkImgNotification{
+    scale: 1.3;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    cursor: pointer;
+
+    filter: brightness(0) saturate(100%) invert(9%) sepia(10%) saturate(2715%) hue-rotate(180deg) brightness(96%) contrast(89%);
+}
+
+
+.sideLinkTextNotification {
+    color: #1C2433;
+    font-size: 1.2vw;
+    margin-left: 15px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+
+.sideLinkRegistration {
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    background-color: #ffffff;
+}
+
+.sideLinkImgRegistration{
+    scale: 1.3;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    cursor: pointer;
+
+    filter: brightness(0) saturate(100%) invert(9%) sepia(10%) saturate(2715%) hue-rotate(180deg) brightness(96%) contrast(89%);
+}
+
+
+.sideLinkTextRegistration {
+    color: #1C2433;
+    font-size: 1.2vw;
+    margin-left: 15px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+
+.sideLinkPromotion {
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    background-color: #ffffff;
+}
+
+.sideLinkImgPromotion{
+    scale: 1.3;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    cursor: pointer;
+
+    filter: brightness(0) saturate(100%) invert(9%) sepia(10%) saturate(2715%) hue-rotate(180deg) brightness(96%) contrast(89%);
+}
+
+
+.sideLinkTextPromotion {
+    color: #1C2433;
+    font-size: 1.2vw;
+    margin-left: 15px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    cursor: pointer;
+}
