@@ -16,7 +16,7 @@ function NavBar() {
                 <Image className='logo' src={logo}/>
             </div> 
 
-            <hr className='verLine'/>
+            {/* <hr className='verLine'/> */}
 
             <div className='navLinks'>
                 <p className='links'>Events</p>
@@ -37,7 +37,7 @@ function NavBar() {
             ) : null}
             </div>
 
-            <div style={{display:'flex', marginLeft: '39vw',}}>
+            <div style={{display:'flex', marginLeft: '42vw'}}>
                 <Image className='navBut' src={close}/>
                 <Image className='navBut' src={notification}/>
             </div>

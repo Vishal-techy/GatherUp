@@ -11,6 +11,8 @@ import '@/styles/subNavBar.css'
 import '@/styles/eventCard.css'
 import '@/styles/teamCard.css'
 
+import '@/styles/sideNavBar.css'
+import '@/styles/eventOverview.css'
 
 const noAuthRequired = ['/login', '/signup']
 
