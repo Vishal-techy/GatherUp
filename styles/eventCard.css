@@ -8,9 +8,11 @@
     justify-content: center;
     flex-direction: column;
     margin: 0 auto;
-    padding-top: 20px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    border-radius: 10px;
     width: 85vw;
-    height:15vw;
+    /* height:15vw; */
     background-color: #ffffff;
     color: #000000;
 }
@@ -70,6 +72,11 @@
     margin-top: 20px;
 }
 
+.eventDescription {
+    /* background-color: cornflowerblue; */
+    /* margin-top: -30px; */
+}
+
 .eveDesc {
     width: 55vw;
     margin-left: 30px;
@@ -90,5 +97,9 @@
 }
 
 .preview {
-    background-color: coral;
+    margin-top: 15px;
+    float: right;
+    font-weight: 600;
+    font-size: 1.2vw;
+    color: #2D8FEA;
 }

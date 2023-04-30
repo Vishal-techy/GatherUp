@@ -41,9 +41,9 @@ function EventCard() {
                             <p className='mb'>Online Event</p>
                         </div>
                     </div>
+                    <div className='preview'>Preview</div>
                 </div>
             </div>
-            <div className='preview'>Preview</div>
         </div>
     </div>
   )
