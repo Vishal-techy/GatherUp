@@ -14,6 +14,8 @@ import '@/styles/notificationCenter.css'
 
 import '@/styles/sideNavBar.css'
 import '@/styles/eventOverview.css'
+import '@/styles/registeredUsers.css'
+import '@/styles/sessionCard.css'
 
 const noAuthRequired = ['/login', '/signup']
 

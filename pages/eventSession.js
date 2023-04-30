@@ -11,6 +11,7 @@ import session from '@/public/session.svg'
 import emails from '@/public/emails.svg'
 import registrations from '@/public/registrations.svg'
 import promotions from '@/public/promotions.svg'
+import SessionCard from '@/components/SessionCard'
 
 function eventSession() {
   return (
@@ -64,6 +65,9 @@ function eventSession() {
                         </div>
                     </div>
         </div>
+
+        <SessionCard/>
+
         </div>
         </div>
     </div>
