@@ -67,7 +67,7 @@ function eventTeam() {
                     </div>
             </div>
 
-            <TeamCard name="Vishal Chinnasamy" email="vishalchinns1650@gmail.com" eventRole="Student"/>
+            <TeamCard name="Vishal Chinnasamy" email="vishalchinns1650@gmail.com" eventRole="Owner"/>
         </div>
     </div>
 
