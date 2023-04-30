@@ -1,0 +1,58 @@
+.NotificationCentercardWrap{
+    background: #FFFFFF;
+border: 1px solid #D6D6D6;
+border-radius: 20px;
+    width:1013px;
+    height: 530px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.NotificationCard-hero{
+    margin-top: 60px;
+}
+/* .email-label{
+    display: flex;
+} */
+.emailInput{
+    width: 669px;
+    height: 48px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 50px;
+    background: #FFFFFF;
+    padding-left: 15px;
+box-shadow: 0px 2px 11px rgba(69, 65, 164, 0.06), 0px 4px 10px rgba(31, 37, 89, 0.07);
+
+}
+.passwordInput{
+    margin-top: 50px;
+    width: 669px;
+    height: 208px;
+    border-radius: 10px;
+    border: none;
+    background: #FFFFFF;
+    /* padding-inline-start: 50px; */
+    padding-bottom: 150px;
+    padding-left: 15px;
+box-shadow: 0px 2px 11px rgba(69, 65, 164, 0.06), 0px 4px 10px rgba(31, 37, 89, 0.07);
+}
+.submit-btn{
+    width: 116px;
+    height: 37px;
+    left: 779px;
+    top: 640px;
+    
+    background: #000000;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15), 4px 0px 25px rgba(0, 0, 0, 0.15);
+    border-radius: 7px;
+    margin-top: 25px;
+}
+.span-submit{
+    color: white;
+}
+.sub-btn-wrap{
+    display: flex;
+    justify-content: center;
+}
