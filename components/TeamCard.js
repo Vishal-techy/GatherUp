@@ -7,7 +7,9 @@ function TeamCard() {
       <div className='circle'>
 
       </div>
+    
     </div>
+    
     </div>
   )
 }
