@@ -5,6 +5,9 @@ import styles from '@/styles/Home.module.css'
 import NavBar from '@/components/NavBar'
 import SubNavBar from '@/components/SubNavBar'
 import EventCard from '@/components/EventCard'
+import axios from 'axios'
+import { useEffect, useState } from 'react'
+import { useAuth } from '../context/AuthContext'
 import TeamCard from '@/components/TeamCard'
 import NotificationCenter from '@/components/NotficationCenter'
 // import NotificationCenter from '@/components/notficationCenter'
@@ -12,6 +15,21 @@ import NotificationCenter from '@/components/NotficationCenter'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+  const [events, setEvents] = useState([])
+  const [loading, setLoading] = useState(true)
+  const { user, login } = useAuth()
+
+  useEffect(() => {
+    console.log(user);
+    setLoading(true)
+    axios.get(`http://localhost:8080/createEvent/${user.uid}`).then((res) => {
+      setEvents(res.data)
+      setLoading(false)
+    }).catch((err) => {
+       setLoading(false)
+       alert("Something went wrong")
+    })
+  }, [])
   return (
     <>
       <Head>
@@ -24,11 +42,16 @@ export default function Home() {
       <NavBar/>
       <SubNavBar/>
 
-      
-      {/* <EventCard/> */}
-      {/* <TeamCard name="Vishal Chinnasamy" email="vishalchinns1650@gmail.com" eventRole="Event Owner"/> */}
-  
-
+      {
+        events.length === 0 ?
+        <div style={{display: 'flex',flexDirection: 'column', justifyContent: 'center', alignItems: 'center', width: '100vw', marginTop: 150}}>
+          <h1>No Events Created</h1>
+          <p style={{marginTop: 20}}>Tap on the + icon to create an event</p>
+        </div> : 
+        events.map((event) => (
+          <EventCard title={event.title} description={event.description} startDate={event.startDate} endDate={event.endDate} venue={event.venue}/>
+        ))
+      }
     </>
   )
 }
