@@ -20,32 +20,32 @@ function eventSession() {
         {/* <SideNavBar/> */}
 
         <div className='sideNavBar'>
-            <Link href="/eventOverview"><div className='sideLinkWrap1'><div className='sideLink'>
+            <Link style={{textDecoration:'none'}} href="/eventOverview"><div className='sideLinkWrap1'><div className='sideLink'>
                 <Image className='sideLinkImg' src={overview}/>
                 <p className='sideLinkText' style={{textDecoration:'none', borderColor:'white'}}>Overview</p>
             </div></div> </Link>
 
-            <Link href="/eventTeam"><div className='sideLinkWrap'><div className='sideLink'>
+            <Link style={{textDecoration:'none'}} href="/eventTeam"><div className='sideLinkWrap'><div className='sideLink'>
                 <Image className='sideLinkImg' src={team}/>
                 <p className='sideLinkText' style={{textDecoration:'none'}}>Team</p>
             </div></div></Link>
 
-            <Link href="/eventSession"><div className='sideLinkWrap'><div className='sideLinkSession'>
+            <Link style={{textDecoration:'none'}} href="/eventSession"><div className='sideLinkWrap'><div className='sideLinkSession'>
                 <Image className='sideLinkImgSession' src={session}/>
                 <p className='sideLinkTextSession'>Sessions</p>
             </div></div></Link>
 
-            <Link href="/notificationCenter"><div className='sideLinkWrap'><div className='sideLink'>
+            <Link style={{textDecoration:'none'}} href="/notificationCenter"><div className='sideLinkWrap'><div className='sideLink'>
                 <Image className='sideLinkImg' src={emails}/>
                 <p className='sideLinkText'>Notifications</p>
             </div></div></Link>
 
-            <Link href="/eventRegistration"><div className='sideLinkWrap'><div className='sideLink'>
+            <Link style={{textDecoration:'none'}} href="/eventRegistration"><div className='sideLinkWrap'><div className='sideLink'>
                 <Image className='sideLinkImg' src={registrations}/>
                 <p className='sideLinkText'>Registrations</p>
             </div></div></Link>
 
-            <Link href="/eventPromotion"><div className='sideLinkWrap'><div className='sideLink'>
+            <Link style={{textDecoration:'none'}} href="/eventPromotion"><div className='sideLinkWrap'><div className='sideLink'>
                 <Image className='sideLinkImg' src={promotions}/>
                 <p className='sideLinkText'>Promotions</p>
             </div></div></Link>
