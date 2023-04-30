@@ -21,6 +21,8 @@ export default function Home() {
       
       <NavBar/>
       <SubNavBar/>
+
+      
       <EventCard/>
       <TeamCard/>
 
