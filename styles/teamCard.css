@@ -1,13 +1,14 @@
 .card{
-    background: yellowgreen ;
+    background: white ;
     width: 1180px;
     height: 89px;
     border-radius: 10px;
-    justify-content: center;
+    display: flex;
+    align-items: center;
 }
 .cardWrap{
-    margin-left: 150px;
-    background: #000;
+    display: flex;
+    justify-content: center;
 }
 .circle{
     width: 63px;
@@ -19,5 +20,11 @@
     margin-left: 30px;
 }
 .teamCardText{
-    margin-left: 150px;
+    margin-left:20px;
+}
+.text3{
+    margin-left:250px;
+}
+.text4{
+    margin-left: 250px;
 }
