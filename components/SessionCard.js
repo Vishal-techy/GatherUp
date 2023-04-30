@@ -3,6 +3,7 @@ import React from 'react'
 import poster from '../public/eventPoster.png'
 import date from '../public/date.png'
 import mode from '../public/mode.png'
+import template from '@/public/temp2.jpeg'
 
 function SessionCard({title, description, startDate, endDate, venue, session}) {
   return (
@@ -24,7 +25,8 @@ function SessionCard({title, description, startDate, endDate, venue, session}) {
             <hr style={{width:'78vw', marginTop:'15px'}}/>
 
             <div className='eventContent'>
-                <div className='eventPoster'>
+                <div className='eventPoster1'>
+                    <Image style={{width:'20vw', height:'auto', borderRadius:'10px'}} src={template}/>
                     {/* <Image width={'10%'} src={poster}/> */}
                 </div>
                 <div className='eventDescription'>

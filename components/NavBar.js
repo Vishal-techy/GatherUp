@@ -5,6 +5,7 @@ import close from '../public/close.png'
 import notification from '../public/notification.png'
 import { useAuth } from '../context/AuthContext'
 import { useRouter } from 'next/router'
+import Link from 'next/link'
 
 function NavBar() {
     const { user, logout } = useAuth()
@@ -13,15 +14,15 @@ function NavBar() {
     <div>
         <div className='navBar'>
             <div>
-                <Image className='logo' src={logo}/>
+                <Link href={'/'}><Image className='logo' src={logo}/></Link>
             </div> 
 
             {/* <hr className='verLine'/> */}
 
             <div className='navLinks'>
-                <p className='links'>Events</p>
-                <p className='links'>Attendees</p>
-                <p className='links'>Settings</p>
+                <Link href={'/eventOverview'}><p className='links'>Events</p></Link>
+                <Link href={'/attendees'}><p className='links'>Attendees</p></Link>
+                <Link href={'/'}><p className='links'>Settings</p></Link>
                 {user ? (
               <div>
                 <p
