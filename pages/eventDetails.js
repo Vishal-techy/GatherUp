@@ -1,5 +1,6 @@
 import NavBar from '@/components/NavBar'
 import React from 'react'
+import { useState } from 'react'
 import Image from 'next/image'
 import date from '../public/date.png'
 import mode from '../public/mode.png'
